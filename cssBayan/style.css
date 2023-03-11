@@ -85,6 +85,12 @@ a {
     color: #000;
 }
 
+.accordion:hover .accordion-header_icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .accordion-item:hover .accordion-header_icon {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -94,11 +100,6 @@ a {
     transition: all 0.3s ease;
 }
 
-.accordion:hover .accordion-header_icon {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-}
 
 .accordion-item:hover .accordion-content {
     display: flex;
@@ -133,3 +134,18 @@ a {
     transform: rotate(45deg);
 }
 
+@media only screen and (max-width: 648px) {
+    .accordion {
+        padding:  1rem;
+    }
+    .accordion-content {
+        padding:  0rem;
+    }
+    .accordion-content-img {
+        max-width: 17.5rem;
+        margin: auto;
+        animation-name: imgZumMob;
+        animation-duration: 1s;
+        transition: all 0.3s ease;
+    }
+}
