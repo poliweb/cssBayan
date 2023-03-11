@@ -149,3 +149,13 @@ a {
         transition: all 0.3s ease;
     }
 }
+
+@keyframes imgZum {
+    from {width: 28rem;}
+    to {width: 38rem;}
+}
+
+@keyframes imgZumMob {
+    from {width: 8rem;}
+    to {width: 17.5rem;}
+}
