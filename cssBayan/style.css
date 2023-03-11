@@ -111,3 +111,25 @@ a {
     color: #000;
 }
 
+.accordion-item:target .accordion-header {
+    background-color: #ddd;
+}
+
+.accordion-item:target .accordion-header .accordion-header_title {
+    color: #000;
+}
+
+.accordion-item:target .accordion-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.accordion-item:target .accordion-header_icon {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
