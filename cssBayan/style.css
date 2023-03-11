@@ -84,3 +84,30 @@ a {
     text-align: center;
     color: #000;
 }
+
+.accordion-item:hover .accordion-header_icon {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.accordion:hover .accordion-header_icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.accordion-item:hover .accordion-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.accordion-item:hover .accordion-header .accordion-header_title {
+    color: #000;
+}
+
